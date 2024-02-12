@@ -30,7 +30,7 @@ class Woocommerce_Custom_Wishlist_Activator {
 	 * @since    1.0.0
 	 */
 	public static function activate() {
-
+		Woocommerce_Custom_Wishlist_Activator_DB::cheate_Tables();
 	}
 
 }

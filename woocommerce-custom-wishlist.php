@@ -42,6 +42,7 @@ define( 'WOOCOMMERCE_CUSTOM_WISHLIST_VERSION', '1.0.0' );
  * This action is documented in includes/class-woocommerce-custom-wishlist-activator.php
  */
 function activate_woocommerce_custom_wishlist() {
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-woocommerce-custom-wishlist-db.php';
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-woocommerce-custom-wishlist-activator.php';
 	Woocommerce_Custom_Wishlist_Activator::activate();
 }
